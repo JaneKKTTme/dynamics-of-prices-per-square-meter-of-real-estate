@@ -1,51 +1,84 @@
-<div class='tableauPlaceholder' id='tableauDashboard' style='position: relative; width: 100%; height: 100vh;'>
-	<noscript>
-		<a href='#'>
-			<img alt='Tableau Dashboard' src='https://public.tableau.com/static/images/JT/JTJM3S7T2/1_rss.png' style='border: none; width: 100%' />
-		</a>
-	</noscript>
-	<object class='tableauViz'  style='display: block; width: 100%; height: 100%;'>
-		<param name='host_url' value='https://public.tableau.com/' />
-		<param name='embed_code_version' value='3' />
-		<param name='toolbar' value='no' />
-		<param name='site_root' value='' />
-		<param name='name' value='Dynamicsofpricespersquaremeter/Dashboard2' />
-		<param name='static_image' value='https://public.tableau.com/static/images/Dynamicsofpricespersquaremeter/Dashboard2/1.png' /> 
-		<param name='tabs' value='no' />
-		<param name='animate_transition' value='yes' />
-		<param name='showShareOptions' value='no' />
-		<param name='showVizHome' value='no' />
-		<param name='bootstrapWhenNotified' value='true' />
-		<param name='language' value='en-US' />
-	</object>
-</div>  
-
-<script type='text/javascript'>
-    var divElement = document.getElementById('tableauDashboard');
-	var vizElement = divElement.getElementsByTagName('object')[0];
-
-	if (window.innerWidth <= 768) {
-		vizElement.style.height = '80vh';
-	} else {
-		vizElement.style.height = '100vh';
-	} 
-
-	vizElement.style.width='100%';
-
-	var scriptElement = document.createElement('script');
-	scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-	scriptElement.onload = function() {
-		if (typeof tableau !== 'undefined') {
-			console.log('Tableau dashboard initialized.');
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Динамика цен на недвижимость</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
 		}
-	};
-	vizElement.parentNode.insertBefore(scriptElement, vizElement);
 
-	window.addEventListener('resize', function() {
+		.tableauPlaceholder {
+			podition: relative;
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+			border: None;
+		}
+
+		.tableauViz {
+			display; block;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<div class='tableauPlaceholder' id='tableauDashboard'>
+		<noscript>
+			<a href='#'>
+				<img alt='Tableau Dashboard' src='https://public.tableau.com/static/images/JT/JTJM3S7T2/1_rss.png' />
+			</a>
+		</noscript>
+		<object class='tableauViz'>
+			<param name='host_url' value='https://public.tableau.com/' />
+			<param name='embed_code_version' value='3' />
+			<param name='toolbar' value='no' />
+			<param name='site_root' value='' />
+			<param name='name' value='Dynamicsofpricespersquaremeter/Dashboard2' />
+			<param name='static_image' value='https://public.tableau.com/static/images/Dynamicsofpricespersquaremeter/Dashboard2/1.png' /> 
+			<param name='tabs' value='no' />
+			<param name='animate_transition' value='yes' />
+			<param name='showShareOptions' value='no' />
+			<param name='showVizHome' value='no' />
+			<param name='bootstrapWhenNotified' value='true' />
+			<param name='language' value='en-US' />
+		</object>
+	</div>  
+
+	<script type='text/javascript'>
+	    var divElement = document.getElementById('tableauDashboard');
+		var vizElement = divElement.getElementsByTagName('object')[0];
+
 		if (window.innerWidth <= 768) {
-            vizElement.style.height = '80vh';
-        } else {
-            vizElement.style.height = '100vh';
-        }
-	});
-</script>
+			vizElement.style.height = '80vh';
+		} else {
+			vizElement.style.height = '100vh';
+		} 
+
+		vizElement.style.width='100%';
+
+		var scriptElement = document.createElement('script');
+		scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+		scriptElement.onload = function() {
+			if (typeof tableau !== 'undefined') {
+				console.log('Tableau dashboard initialized.');
+			}
+		};
+		vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+		window.addEventListener('resize', function() {
+			if (window.innerWidth <= 768) {
+	            vizElement.style.height = '80vh';
+	        } else {
+	            vizElement.style.height = '100vh';
+	        }
+		});
+	</script>
+</body>
+</html>
