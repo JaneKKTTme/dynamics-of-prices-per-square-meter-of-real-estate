@@ -71,6 +71,8 @@ jupyter notebook preprocessing_data.ipynb
 ## <a id="структура-проекта"></a> 📁 Структура проекта
 ```text
 project/
+├── assets/
+│   └── dashboard-demo.gif                      # Демо визуализация
 ├── index.html                                  # Главная HTML-страница с встроенным Tableau
 ├── dynamics of prices per square meter.csv     # Очищенный датасет (CSV)
 ├── dynamics of prices per square meter.parquet # Очищенный датасет (Parquet)
