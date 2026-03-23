@@ -1,7 +1,7 @@
 # 📈 Real Estate Price Dynamics Dashboard
 
 <div align='center'>
-   <img src='assets/dasboard-demo.gif' alt='Interactive Dashboard Demo' width='800'>
+   <img src='assets/dasboard-demo.gif' alt='Interactive Dashboard Demo' width='800'/>
    <br>
    <em>✨ Interactive price dynamics visualization in action ✨</em>
 </div>
