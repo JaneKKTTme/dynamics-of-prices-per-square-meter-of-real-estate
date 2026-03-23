@@ -1,5 +1,11 @@
 # 📈 Real Estate Price Dynamics Dashboard
 
+<div align='center'>
+   <img src='assets/dasboard-demo.gif' alt='Interactive Dashboard Demo' width='800'>
+   <br>
+   <em>✨ Interactive price dynamics visualization in action ✨</em>
+</div>
+
 An interactive data visualization dashboard built with Tableau Public that tracks the dynamics of square meter prices across Russian regions. Stop guessing and start analyzing where the market is heading! 📊
 
 > *Warning:* Analyzing real estate prices can lead to an uncontrollable desire to buy an apartment or, conversely, to postpone this idea indefinitely! ⚠️
